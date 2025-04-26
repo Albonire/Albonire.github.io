@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Fredericka+the+Great&display=swap');:root {
+    --main-font: "Combo", serif;
+    --headings: "Fredericka the Great", serif;
+    --main-color:#BA8E7A;
+    --font-color:#EFDFCC;
+    --background-color:#DBDBDB;
+}
+
+html{
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: var(--main-font);
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    background-image: url(assets/pixelcut-export.jpg);
+    background-size: cover;
+    background-position: center;
+    border: #66796B 0.9rem solid;
+}
+
+
+
+nav{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    background-color: #66796B;
+    color: var(--font-color);
+    padding: 10px;
+
+}
+
+nav h1{
+    height: 100%;
+    position: relative;
+    top:-2px;
+    margin: 0;
+    align-items: center;
+    font-family: var(--headings);
+    cursor: pointer;
+}
+
+.burger{
+    height:100%;
+    list-style: none;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    gap:2rem;
+}
+
+
+nav a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--font-color);
+}
+
+nav a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+a:active {
+    position:relative;
+    top: -2px;
+    right: -2px;
+}
+
+header{
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    color: black;
+    margin-left: 5.5rem;
+}
+
+.mainHeadings{
+    font-family: var(--headings);
+    font-size: 3rem;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    color: #614a3f;
+}
+
+.primary-headings{
+    font-family: var(--main-font);
+    font-size: 1.7rem;
+    text-align: left;
+    margin-top: 2.1rem;
+    width: 50%;
+    
+}
+
+.bg-gray{
+    background-color: #66796B;
+    color: #E7E7E7;
+    padding: 2px 1px;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+main {
+    margin: 0 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 6em;
+}
+
+.img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0.2rem;
+}
+
+.section-three{
+    margin:0 5.5rem;
+    width:calc(100% - 11rem) ;
+    height: auto;
+    text-align: left;
+
+}
+
+.section-three .primary-headings{
+    margin-bottom: 4rem;
+}
+
+.list {
+    margin: 0 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.item{
+    width: calc(48% - 2rem); /* Ajustar para tener 3 elementos por fila con espacio */
+    height: auto;
+    margin-bottom: 2rem; /* Espacio entre filas */
+}
+
+.item img {
+    width: 100%; /* Hacer que las imágenes llenen el contenedor */
+    height: 45rem;
+    object-fit: cover; /* Mantener proporciones */
+    border-radius: 0.3rem;
+}
+
+
+
+.section-three .item h1{
+    font-size: 2rem;
+    color: #614a3f;
+    margin-left: -2rem;
+}
+
+footer{
+    background-color: #66796B;
+    color: var(--font-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 30vh;
+}   
+
+footer h1{
+    font-size: 2rem;
+    font-family: var(--headings);
+}
+
+.web{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 35%;
+    margin-left: 2rem;
+    word-spacing: 0.2rem;
+}
+
+.about{
+    display: flex;
+    width: 50%;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    margin-left: 2rem;
+}
+
+.aboutStyle h1{
+    margin-bottom:1rem;
+}
+
+.list h1{
+    font-family: var(--headings);
+    margin-bottom: 1rem;
+}
+
+@media (max-width : 768px){
+    nav{
+        height: 8vh;
+    }
+ 
+    nav h1{
+        display: flex;
+        align-items: center;
+        font-size: 1.3rem;
+        margin-left: 1rem;
+        word-spacing: -0.3rem;
+    }
+
+    .burger{
+        font-size: 1.1  rem;
+        align-items: center;
+        gap: 1rem;}
+
+    header{
+        margin-top: 2rem;
+        height: 50vh;
+        margin-left: 2rem;
+    }
+
+    .mainHeadings{
+        font-size: 1.8rem;
+    }
+
+    .primary-headings{
+        font-size: 1.3rem;
+    }
+
+    main{
+        margin: 2rem 2rem;
+    }
+
+    .img{
+        width: 95%;
+    }
+
+    .section-three{
+        width: 100%;
+        margin: 0 2rem;
+    }
+
+    .section-three .primary-headings{
+        width: 45vh;
+    }
+
+    .list{
+        flex-wrap: wrap;
+        gap: 1rem;
+        text-align: center;
+
+    }
+
+    .item{
+        width:80vh;
+        margin-right:4rem;
+    }
+
+    .item img{
+        height: auto;
+    }
+
+    .section-three .item h1{
+        font-size: 1.5rem;
+    }
+
+    footer{
+        height: 40vh;
+        font-size: 0.8rem;
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer h1{
+        font-size: 1.5rem;
+        font-family: var(--headings);
+    }
+
+    .web{
+        width: 90%;
+    }
+
+    .about{
+        width: 90%;
+    }
+
+
+}
